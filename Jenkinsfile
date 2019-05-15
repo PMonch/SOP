@@ -1,11 +1,9 @@
 pipeline {
-    agent any
-
-    tools {nodejs "versie 10.15.3"}
+    agent { docker {image 'node:10.15.3' } }
     stages {
         stage('build') {
             steps {
-                sh 'npm start'
+                sh 'npm --version'
             }
         }
     }
