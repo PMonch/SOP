@@ -3,7 +3,7 @@ const app = express();
 
 const HOST = '0.0.0.0';
 const PORT = '8080';
-app.get('/', (req, res) => res.send('Hello Cool'));
+app.get('/', (req, res) => res.send('Hello World! Pika Pika'));
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
